@@ -17,7 +17,7 @@ export default function IFrameComponent({
 
   return (
     <iframe
-      className="block bg-black border-none h-screen w-screen"
+      className="block bg-black border-none h-screen w-full"
       src={src}
       name={title + "-iframe"}
       title={title}
