@@ -1,0 +1,3 @@
+[submodule "src/submodules/qr-code-component"]
+	path = src/submodules/qr-code-component
+	url = https://github.com/sashauly/qr-code-component.git
