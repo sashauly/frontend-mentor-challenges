@@ -9,8 +9,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <Header>
-        <Image src="" alt="logo" />
-        <h1>Frontend Mentors Challenges</h1>
+        <div className="flex gap-2">
+          <Image src="" alt="logo" />
+          <h1>Frontend Mentor Challenges</h1>
+        </div>
         <Navbar />
       </Header>
       <main>{children}</main>
