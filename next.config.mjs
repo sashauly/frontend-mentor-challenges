@@ -2,7 +2,7 @@
 
 const isProd = process.env.NODE_ENV === "production";
 
-const repo = "frontend-mentors-challenges";
+const repo = "frontend-mentor-challenges";
 const assetPrefix = `/${repo}/`;
 const basePath = `/${repo}`;
 

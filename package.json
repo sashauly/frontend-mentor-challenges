@@ -1,8 +1,8 @@
 {
-  "name": "frontend-mentors-challenges",
+  "name": "frontend-mentor-challenges",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sashauly.github.io/frontend-mentors-challenges",
+  "homepage": "https://sashauly.github.io/frontend-mentor-challenges",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
