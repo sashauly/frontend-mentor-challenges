@@ -1,3 +1,9 @@
-[submodule "src/submodules/qr-code-component"]
-	path = src/submodules/qr-code-component
+[submodule "public/qr-code-component"]
+	path = public/qr-code-component
 	url = https://github.com/sashauly/qr-code-component.git
+[submodule "public/blog-preview-card"]
+	path = public/blog-preview-card
+	url = https://github.com/sashauly/blog-preview-card.git
+[submodule "public/social-links-profile"]
+	path = public/social-links-profile
+	url = https://github.com/sashauly/social-links-profile.git
