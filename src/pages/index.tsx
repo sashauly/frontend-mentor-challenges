@@ -29,6 +29,14 @@ export default function Home() {
             pageUrl="/social-links-profile"
           />
         </li>
+        <li>
+          <PreviewCard
+            title="recipe-page"
+            description="recipe-page"
+            imageUrl="/recipe-page/images/screenshot.png"
+            pageUrl="/recipe-page"
+          />
+        </li>
       </ul>
     </div>
   );
