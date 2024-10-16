@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fblog-preview-card","\u002Fqr-code-component","\u002Frecipe-page","\u002Fsocial-links-profile"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
