@@ -1,0 +1,17 @@
+{
+  "name": "blog-preview-card-main",
+  "version": "1.0.0",
+  "description": "Design preview for the Blog preview card coding challenge",
+  "homepage": "https://sashauly.github.io/blog-preview-card/",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^5.4.9"
+  }
+}
