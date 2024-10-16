@@ -4,13 +4,16 @@ import Header from "./header";
 import Navbar from "./navbar";
 
 import React from "react";
+import Link from "next/link";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <Header>
         <div className="flex gap-2">
-          <Image src="" alt="logo" />
+          <Link href="/">
+            <Image src="" alt="logo" />
+          </Link>
           <h1>Frontend Mentor Challenges</h1>
         </div>
         <Navbar />
