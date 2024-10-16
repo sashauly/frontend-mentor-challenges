@@ -6,8 +6,8 @@ export default function MarkdownRenderer({
   fileContent: string;
 }) {
   return (
-    <div>
-      <Markdown>{fileContent}</Markdown>
+    <div className="flex justify-center font-mono">
+      <Markdown className="prose lg:prose-xl">{fileContent}</Markdown>
     </div>
   );
 }
