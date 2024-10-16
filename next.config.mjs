@@ -13,8 +13,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  assetPrefix: isProd ? assetPrefix : "",
-  basePath: isProd ? basePath : "",
+  // assetPrefix: isProd ? assetPrefix : "",
+  // basePath: isProd ? basePath : "",
 };
 
 export default nextConfig;
