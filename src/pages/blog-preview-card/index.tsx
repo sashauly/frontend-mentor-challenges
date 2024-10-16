@@ -1,23 +1,23 @@
 import IFrameComponent from "@/components/IFrameComponent";
 import MarkdownRenderer from "@/components/MarkdownRenderer";
-import { GetServerSideProps, InferGetServerSidePropsType } from "next";
-import { readFileSync } from "fs";
+import fs from "fs";
+import { GetStaticProps, InferGetStaticPropsType } from "next";
+import path from "path";
 
 export const blogPreviewCardUrl = "blog-preview-card";
 const blogPreviewCardMarkup = `/${blogPreviewCardUrl}/index.html`;
 const blogPreviewCardMarkdown: string = `/${blogPreviewCardUrl}/README.md`;
 
-export const getServerSideProps: GetServerSideProps = (async () => {
-  const fileContent = await readFileSync(
-    process.cwd() + "/public" + blogPreviewCardMarkdown,
-    "utf8"
-  );
+const filePath = path.join(process.cwd(), "/public", blogPreviewCardMarkdown);
+
+export const getStaticProps: GetStaticProps = (async () => {
+  const fileContent = await fs.readFileSync(filePath, "utf8");
   return { props: { fileContent } };
-}) satisfies GetServerSideProps<{ fileContent: string }>;
+}) satisfies GetStaticProps<{ fileContent: string }>;
 
 export default function BlogPreviewCardPage({
   fileContent,
-}: InferGetServerSidePropsType<typeof getServerSideProps>) {
+}: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <div id={blogPreviewCardUrl}>
       <h3>{blogPreviewCardUrl}</h3>
